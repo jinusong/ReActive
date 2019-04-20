@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/navigation_q"
+            android:title="탐라"/>
+
+    <item
+            android:id="@+id/navigation_w"
+            android:title="응아닐야"/>
+
+    <item
+            android:id="@+id/navigation_e"
+            android:title="려차"/>
+
+    <item
+            android:id="@+id/navigation_r"
+            android:title="내정보"/>
+
+</menu>
