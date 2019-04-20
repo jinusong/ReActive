@@ -1,8 +1,7 @@
-package com.jinwoo.appjam18
+package com.jinwoo.reactive
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.internal.BottomNavigationItemView
 import android.support.design.widget.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -50,6 +49,6 @@ class MainActivity : AppCompatActivity() {
         if (bottom_navi.selectedItemId == R.id.navigation_q)
             super.onBackPressed()
         else
-            bottom_navi.selectedItemId = R.id.navigation_w
+            bottom_navi.selectedItemId = R.id.navigation_q
     }
 }

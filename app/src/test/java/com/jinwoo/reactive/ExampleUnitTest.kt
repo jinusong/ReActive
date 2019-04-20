@@ -1,4 +1,4 @@
-package com.jinwoo.appjam18
+package com.jinwoo.reactive
 
 import org.junit.Test
 

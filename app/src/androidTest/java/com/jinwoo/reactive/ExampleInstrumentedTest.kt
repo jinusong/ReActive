@@ -1,4 +1,4 @@
-package com.jinwoo.appjam18
+package com.jinwoo.reactive
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4

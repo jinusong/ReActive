@@ -1,4 +1,4 @@
-package com.jinwoo.appjam18
+package com.jinwoo.reactive
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
