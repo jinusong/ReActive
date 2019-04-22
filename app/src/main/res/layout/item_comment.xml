@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        android:paddingHorizontal="14dp"
+        android:layout_marginTop="20dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+            android:background="@drawable/white_circle_view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/commenter_profile"
+            android:layout_width="34dp"
+            android:layout_height="34dp"/>
+
+    <TextView
+            android:layout_marginStart="4dp"
+            android:text="송진우"
+            android:textSize="12dp"
+            android:textColor="@color/colorMain"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/commenter_profile"
+            android:id="@+id/commenter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:layout_marginStart="4dp"
+            android:text="안녕"
+            android:textSize="12dp"
+            app:layout_constraintTop_toBottomOf="@id/commenter_name"
+            app:layout_constraintStart_toEndOf="@id/commenter_profile"
+            android:id="@+id/commenter_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <LinearLayout
+            app:layout_constraintTop_toTopOf="@id/commenter_name"
+            app:layout_constraintBottom_toBottomOf="@id/commenter_name"
+            app:layout_constraintStart_toEndOf="@id/commenter_name"
+            android:layout_marginStart="4dp"
+            android:layout_marginVertical="16dp"
+            android:id="@+id/item_home_score_view_lay"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <View
+                android:layout_marginHorizontal="2dp"
+                android:id="@+id/first_score_view"
+                android:background="@drawable/gray_circle_view"
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+        <View
+                android:layout_marginHorizontal="2dp"
+                android:id="@+id/second_score_view"
+                android:background="@drawable/gray_circle_view"
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+        <View
+                android:layout_marginHorizontal="2dp"
+                android:id="@+id/third_score_view"
+                android:background="@drawable/gray_circle_view"
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+        <View
+                android:layout_marginHorizontal="2dp"
+                android:id="@+id/forth_score_view"
+                android:background="@drawable/gray_circle_view"
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+        <View
+                android:layout_marginHorizontal="2dp"
+                android:id="@+id/fifth_score_view"
+                android:background="@drawable/gray_circle_view"
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

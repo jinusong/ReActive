@@ -2,19 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-            android:id="@+id/navigation_q"
-            android:title="탐라"/>
+            android:icon="@drawable/home_click"
+            android:id="@+id/navigation_home"
+            android:title="홈"/>
 
     <item
-            android:id="@+id/navigation_w"
-            android:title="응아닐야"/>
+            android:icon="@drawable/heart_click"
+            android:id="@+id/navigation_heart"
+            android:title="인기순"/>
 
     <item
-            android:id="@+id/navigation_e"
-            android:title="려차"/>
+            android:icon="@drawable/hash_click"
+            android:id="@+id/navigation_hash_tag"
+            android:title="해시태그"/>
 
     <item
-            android:id="@+id/navigation_r"
-            android:title="내정보"/>
+            android:icon="@drawable/menu_click"
+            android:id="@+id/navigation_menu"
+            android:title="더보기"/>
 
 </menu>

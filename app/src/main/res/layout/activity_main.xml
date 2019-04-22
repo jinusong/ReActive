@@ -20,12 +20,14 @@
 
     <android.support.design.widget.BottomNavigationView
             android:id="@+id/bottom_navi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:menu="@menu/navigation"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@color/colorPrimary"
-            android:layout_width="match_parent"
+            android:background="#0061AB"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:itemIconTint="#FFFFFF"
-            app:itemTextColor="#FFFFFF"/>
+            app:itemIconTint="@color/selector_navigation"
+            app:itemTextColor="@color/selector_navigation"/>
 
 </android.support.constraint.ConstraintLayout>

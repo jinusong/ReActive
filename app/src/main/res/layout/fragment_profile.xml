@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.Toolbar
+            android:background="@color/colorMain"
+            android:id="@+id/proflie_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="취소"
+                    android:textSize="16dp"
+                    android:textColor="#BFBFBF"
+                    android:id="@+id/pofile_cacel_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:text="내 프로필"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="완료"
+                    android:textSize="16dp"
+                    android:textColor="#BFBFBF"
+                    android:id="@+id/pofile_complete_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+            android:id="@+id/profile_image"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/proflie_tool_bar"
+            app:layout_constraintBottom_toTopOf="@id/profile_description"
+            android:background="@drawable/white_big_circle_view"
+            android:layout_width="200dp"
+            android:layout_height="200dp"/>
+
+    <TextView
+            android:id="@+id/profile_description"
+            app:layout_constraintBottom_toTopOf="@id/profile_edit_lay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_image"
+            android:textSize="14dp"
+            android:textColor="@color/colorMain"
+            android:text="프로필 사진 바꾸기"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <android.support.constraint.ConstraintLayout
+            app:layout_constraintTop_toBottomOf="@id/profile_description"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/sqaure_blue_view"
+            android:id="@+id/profile_edit_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:layout_marginVertical="30dp"
+                android:layout_marginHorizontal="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/nickname_edit"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/nickname_title"
+                android:text="닉네임"
+                android:textColor="@color/colorMain"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/nickname_edit"
+                app:layout_constraintTop_toTopOf="@id/nickname_title"
+                app:layout_constraintBottom_toBottomOf="@id/nickname_title"
+                app:layout_constraintStart_toEndOf="@id/nickname_title"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_marginVertical="30dp"
+                android:layout_marginHorizontal="40dp"
+                app:layout_constraintTop_toBottomOf="@id/nickname_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/intro_edit"
+                android:id="@+id/intro_title"
+                android:text="  소개  "
+                android:textColor="@color/colorMain"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:layout_marginEnd="40dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/intro_edit"
+                app:layout_constraintTop_toTopOf="@id/intro_title"
+                app:layout_constraintBottom_toBottomOf="@id/intro_title"
+                app:layout_constraintStart_toEndOf="@id/intro_title"
+                android:singleLine="true"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

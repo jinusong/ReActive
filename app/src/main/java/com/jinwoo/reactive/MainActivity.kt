@@ -11,23 +11,23 @@ class MainActivity : AppCompatActivity() {
             = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         val transaction = supportFragmentManager.beginTransaction()
         when(item.itemId) {
-            R.id.navigation_q -> {
-                //transaction.replace(R.id.main_container, dadas)
+            R.id.navigation_home -> {
+                transaction.replace(R.id.main_container, HomeFragment())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_w -> {
-                //transaction.replace(R.id.main_container, dadas)
+            R.id.navigation_heart -> {
+                transaction.replace(R.id.main_container, HeartFragment())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_e -> {
-                //transaction.replace(R.id.main_container, dadas)
+            R.id.navigation_hash_tag -> {
+                transaction.replace(R.id.main_container, HashTagFragment())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
-            R.id.navigation_r -> {
-                //transaction.replace(R.id.main_container, dadas)
+            R.id.navigation_menu -> {
+                transaction.replace(R.id.main_container, ProfileFragment())
                 transaction.commit()
                 return@OnNavigationItemSelectedListener true
             }
@@ -39,16 +39,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         supportFragmentManager.beginTransaction().run {
-            //replace(R.id.main_container, dadas)
+            replace(R.id.main_container, HomeFragment())
             commit()
         }
         bottom_navi.setOnNavigationItemSelectedListener(navigationItemClickListener)
     }
 
     override fun onBackPressed() {
-        if (bottom_navi.selectedItemId == R.id.navigation_q)
+        if (bottom_navi.selectedItemId == R.id.navigation_home)
             super.onBackPressed()
         else
-            bottom_navi.selectedItemId = R.id.navigation_q
+            bottom_navi.selectedItemId = R.id.navigation_home
     }
 }

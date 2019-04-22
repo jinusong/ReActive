@@ -3,6 +3,7 @@ package com.jinwoo.reactive
 import com.jinwoo.reactive.model.PostListModel
 import com.jinwoo.reactive.model.PostingModel
 import com.jinwoo.reactive.model.TagListModel
+import com.jinwoo.reactive.model.TokenModel
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -11,7 +12,7 @@ interface Api {
     fun postSignUp(@Body body: Any): Call<Unit>
 
     @POST("signIn")
-    fun postSignIn(@Body body: Any): Call<Unit>
+    fun postSignIn(@Body body: Any): Call<TokenModel>
 
     @GET
     fun getPostList(@Header("Authorization") token: String): Call<PostListModel>

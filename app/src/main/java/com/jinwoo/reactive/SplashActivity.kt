@@ -9,7 +9,13 @@ class SplashActivity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {
-            startActivity<MainActivity>()
+            if (getToken(this).isNullOrBlank()){
+                startActivity<MainActivity>()
+                finish()
+            } else {
+                startActivity<MainActivity>()
+                finish()
+            }
         } else {
             toast("안드로이드 버전이 낮습니다.")
         }
